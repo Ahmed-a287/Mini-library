@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>The Mini Library</title>
+  </head>
+  <body>
+    <!-- Huvudsida-->
+    <h1 class="libraryHeader">The Mini Library</h1>
+    <button id="toFirstPage">
+      <a href="index.html" class="link">HOME</a>
+    </button>
+    <div id="mainPage" class="showBooks">
+      <figure id="bookOne">
+        <p class="bookAuthor">Book Author</p>
+        <h4 class="bookTitle">Book Title</h4>
+      </figure>
+      <figure id="bookTwo">
+        <p class="bookAuthor">Book Author</p>
+        <h4 class="bookTitle">Book Title</h4>
+      </figure>
+      <figure id="bookThree">
+        <p class="bookAuthor">Book Author</p>
+        <h4 class="bookTitle">Book Title</h4>
+      </figure>
+      <figure id="bookFour">
+        <p class="bookAuthor">Book Author</p>
+        <h4 class="bookTitle">Book Title</h4>
+      </figure>
+      <figure id="bookFive">
+        <p class="bookAuthor">Book Author</p>
+        <h4 class="bookTitle">Book Title</h4>
+      </figure>
+      <figure id="bookSix">
+        <p class="bookAuthor">Book Author</p>
+        <h4 class="bookTitle">Book Title</h4>
+      </figure>
+      <figure id="bookSeven">
+        <p class="bookAuthor">Book Author</p>
+        <h4 class="bookTitle">Book Title</h4>
+      </figure>
+      <figure id="bookEight">
+        <p class="bookAuthor">Book Author</p>
+        <h4 class="bookTitle">Book Title</h4>
+      </figure>
+    </div>
+    <!-- Andra sida-->
+    <div id="infoPage" class="hide">
+      <section id="sectionOne">
+        <button id="homeBtn">
+          <a class="theOtherLink" target="_self" href="./library.html">
+            Choose another book!
+          </a>
+        </button>
+        <fig id="chosenBook">
+          <h4 id="theBookAuthor">Book Author</h4>
+          <h2 id="theBookTitle">Book Title</h2>
+          <hr class="theLine" />
+        </fig>
+      </section>
+
+      <section id="sectionTwo">
+        <h2 id="chosenBookTitle">Book Title</h2>
+        <p id="chosenBookAuthor">Book Author</p>
+        <p id="chosenBookDesc">The plot</p>
+
+        <section id="moreInfo">
+          <!--Audience-->
+          <h5 id="audienceHeader">Audience:</h5>
+          <p id="audienceDetails"></p>
+
+          <!--First published-->
+          <h5 id="publishedHeader">First published:</h5>
+          <p id="publishedDetails"></p>
+
+          <!--Pages-->
+          <h5 id="pagesHeader">Pages:</h5>
+          <p id="pagesDetails"></p>
+
+          <!--Publisher-->
+          <h5 id="publisherHeader">Publisher:</h5>
+          <p id="publisherDetails"></p>
+        </section>
+        <button id="orderBtn">Order this book</button>
+      </section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

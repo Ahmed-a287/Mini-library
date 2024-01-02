@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    width: 100vw;
+    background: linear-gradient(to right, rgb(29, 29, 172) 7%,
+    rgb(128, 9, 130) 70%);
+    overflow: hidden;
+}
+
+#theBackground{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Första sida */
+#toTheLibrary:hover{
+    transform: scale(1.2);
+    background-color: rgba(255, 68, 0, 0.96);
+}
+
+#toTheLibrary{
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    width: 16rem;
+    height: 4rem;
+    border-width: 7px ;
+    border-right-color: rgb(255, 236, 109);
+    border-top-color: rgb(199, 0, 0);
+    border-bottom-color: red;
+    border-left-color: orange;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: xx-large;
+    font-style:italic;
+    font-weight: bolder;
+    text-transform: capitalize;
+    background-color: rgba(255, 255, 255, 0.749);
+}
+
+.theLink{
+    text-decoration:none;
+    color: rgb(5, 58, 105);
+    text-transform: capitalize;
+}
+
+
+.libraryHeader{
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.91);
+    margin-top: 1rem;
+}
+
+/* Andra sida*/
+.showBooks{
+    display:grid; 
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 100%;
+    height: 100%;    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 5rem;
+    justify-content: space-between;
+}
+#toFirstPage{
+    background: linear-gradient(to right, rgb(29, 29, 172) 7%,
+    rgb(33, 33, 103) 70%);
+    width: 3rem;
+}
+.link{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bolder;
+}
+/* alla böcker */
+#bookOne, #bookTwo,#bookThree, #bookFour, #bookFive, #bookSix, #bookSeven, #bookEight{
+    display: flex;
+    justify-self: center;
+    flex-direction: column-reverse;
+    width: 9rem;
+    height: 10rem;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 0.2rem;
+    box-shadow: -13px 13px 22px -5px  rgba(193, 187, 187, 0.75);
+}  
+#bookOne:hover, #bookTwo:hover,#bookThree:hover, #bookFour:hover, #bookFive:hover, #bookSix:hover, #bookSeven:hover, #bookEight:hover{
+    transform: scale(1.3); 
+}  
+#bookOne{
+    background-image: linear-gradient(45deg, rgb(20, 198, 243), rgb(222, 243, 248));
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+}
+
+#bookTwo{
+    background-image: linear-gradient(45deg, rgb(36, 229, 62), rgb(222, 243, 248));
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+}
+
+#bookThree{
+    background-image: linear-gradient(45deg, rgb(219, 207, 51), rgb(222, 243, 248));
+    grid-template-columns: 3;
+    grid-template-rows: 1;
+}
+
+#bookFour{
+    background-image: linear-gradient(45deg, rgb(216, 124, 38), rgb(222, 243, 248));
+    grid-template-columns: 4;
+    grid-template-rows: 1;
+}
+
+#bookFive{
+    background-image: linear-gradient(45deg, rgb(111, 24, 211), rgb(222, 243, 248));
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+}
+
+#bookSix{
+    background-image: linear-gradient(45deg, rgb(226, 45, 229), rgb(222, 243, 248));
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+}
+
+#bookSeven{
+    background-image: linear-gradient(45deg, rgb(210, 29, 68), rgb(222, 243, 248));
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+}
+
+#bookEight{
+    background-image: linear-gradient(45deg, rgb(54, 198, 172), rgb(222, 243, 248));
+    grid-template-columns: 4;
+    grid-template-rows: 2;
+}
+
+#bookTitle{
+    margin-left: 0.2rem;
+}
+#bookAuthor{
+    font-size: small;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+    margin-left: 0.2rem;
+}
+
+
+/* hide and show */
+.showInfo{
+    display: grid;
+    grid-template-columns: repeat(2, 25rem);
+    padding: 1rem;
+    margin: auto 13rem;
+    width: 100%;
+    height: 100%;
+}
+.hide{
+    display: none;
+}
+
+
+/* tredje sida*/
+#homeBtn{
+    width: 10rem;
+    height: 1.4rem;
+    margin-bottom: -1rem;
+    border-width: 2px ;
+    border-color: rgba(29, 29, 172, 0.681);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-style:italic;
+    font-weight: bold;
+    background-color: rgba(186, 15, 189, 0.704);
+}
+#homeBtn:hover{
+    transform:scale(1.3);
+}
+.theOtherLink{
+    text-decoration:none;
+    color: rgb(238, 236, 236);
+}
+/* Kolumn ett*/
+#sectionOne{
+    grid-column: 1;
+}
+#chosenBook{
+    background-image: linear-gradient(45deg, rgb(197, 175, 237), rgb(58, 0, 152));
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    height: 24rem;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-top: 1rem;
+    border-style: double;
+    border-color:rgb(255, 255, 255);
+    border-width: .2rem;
+    padding: 1rem;
+}
+#chosenBookTitle{
+    letter-spacing: .3rem;
+}
+#chosenBookAuthor{
+    font-weight: lighter;
+    letter-spacing: .3rem;
+}
+
+.theLine{
+    width: 0.5rem;
+    height:24rem;
+    background-color: red;
+    position:fixed;
+    top:22.5%;
+    left: 47%;
+    border-radius: 5px;
+    border-style: double;
+    border-width: 3px;
+}
+/*Kolumn två*/
+#sectionTwo{
+    margin-top: 2.2rem;
+    background-image: linear-gradient(45deg, rgb(191, 51, 0), rgb(255, 181, 157));
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-style: double;
+    border-color:rgb(255, 255, 255);
+    border-width: .2rem;
+    width: 90%;
+    height: 24rem;
+    padding: .4rem;
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+}
+
+#chosenBookAuthor{
+    margin-bottom: 1rem;
+}
+#chosenBookDesc{
+    max-width: 22rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    word-wrap:break-word;
+    font-size: small;
+}
+
+/*Övriga info*/
+#moreInfo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: rgba(240, 248, 255, 0.533);
+    width: 21rem;
+    height: 5rem;
+    margin: 0 0.1rem;
+    padding:0.5rem;
+    align-items: center;
+    margin-top: 3rem;
+    border-style: groove;
+    border-color: rgb(143, 143, 143);
+}
+#audienceHeader{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#audienceDetails{
+    margin-left: 4rem;
+    grid-column: 1;
+    grid-row: 1;
+    font-size: smaller;
+}
+
+#publishedHeader{
+    grid-column: 2;
+    grid-row: 1;
+}
+#publishedDetails{
+    margin-left: 6rem;
+    grid-column: 2;
+    grid-row: 1;
+    font-size: smaller;
+}
+
+#pagesHeader{
+    grid-column: 1;
+    grid-row: 2;
+}
+#pagesDetails{
+    margin-left: 2.7rem;
+    grid-column: 1;
+    grid-row: 2;
+    font-size: smaller;
+}
+
+#publisherHeader{
+    grid-column: 2;
+    grid-row: 2;
+}
+#publisherDetails{
+    margin-left: 4rem;
+    grid-column: 2;
+    grid-row: 2;
+    font-size: smaller;
+}
+
+#orderBtn{
+    width: 7rem;
+    font-weight: bold;    margin-top: 1rem;
+    background-color: rgba(240, 248, 255, 0.692);
+}
+#orderBtn:hover{
+    transform: scale(1.1);
+}
